@@ -1,9 +1,12 @@
 name: Demo call workflow calling demo workflow
 on:
- push: [main]
+ push:
+  branches: [main]
 
 jobs:
+
  democall:
-   steps:
+  runs-on: ubuntu-latest
+  steps:
    - name: calling demo workflow
-     uses: ../workflows/demo.yml
+     uses: ../workflows/demo.yml@main
