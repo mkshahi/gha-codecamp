@@ -1,0 +1,9 @@
+name: Demo call workflow calling demo workflow
+on:
+ push: [main]
+
+jobs:
+ democall:
+   steps:
+   - name: calling demo workflow
+     uses: ../workflows/demo.yml
