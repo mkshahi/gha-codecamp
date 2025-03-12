@@ -1,0 +1,12 @@
+name: Main Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  call-reusable-workflow:
+    uses: ./.github/workflows/reusable-workflow.yml  # Path to the reusable workflow
+    with:
+      example_input: 'This is a custom input'  # Passing a custom input to the reusable workflow
