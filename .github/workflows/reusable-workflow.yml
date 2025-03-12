@@ -1,0 +1,16 @@
+name: Reusable Workflow
+
+on:
+  workflow_call:  # This indicates that the workflow can be called by other workflows
+    inputs:
+      example_input:
+        description: 'An example input'
+        required: true
+        default: 'default_value'
+
+jobs:
+  run-reusable-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print input
+        run: echo "The input value is ${{ inputs.example_input }}"
