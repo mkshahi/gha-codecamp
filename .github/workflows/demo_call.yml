@@ -9,4 +9,4 @@ jobs:
   runs-on: ubuntu-latest
   steps:
    - name: calling demo workflow
-     uses: ./.github/workflows/demo.yml@main
+     uses: ./.github/workflows/demo.yml
