@@ -11,7 +11,7 @@ on:
     inputs:
       username:
         description: 'A username passed from the caller workflow'
-        required: false
+        required: true
         type: string
 
 
